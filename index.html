@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RetroCast – Business Reports</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="card reports-card">
+    <img src="images/retro-cast.png" class="brand-logo" alt="RetroCast Logo">
+
+    <div class="card-inner">
+      <div class="badge">
+        RetroCast Business Reports
+      </div>
+
+      <h1>Analytics dashboard</h1>
+      <p class="subtitle">
+        Choose your report options and view example insights for your business users.
+      </p>
+
+      <!-- Filters / controls -->
+      <form id="reports-form" class="form reports-form">
+        <!-- Frequency -->
+        <div class="field-label">
+          <label for="frequency">Report frequency</label>
+        </div>
+        <select id="frequency" class="select">
+          <option value="">Select how often…</option>
+          <option value="monthly">Monthly summary</option>
+          <option value="quarterly">Quarterly summary</option>
+          <option value="biannually">Twice a year</option>
+          <option value="yearly">Yearly summary</option>
+        </select>
+
+        <!-- Metric -->
+        <div class="field-label">
+          <label for="metric">Focus metric</label>
+        </div>
+        <select id="metric" class="select">
+          <option value="">Select a metric…</option>
+          <option value="searches">Most searched shows</option>
+          <option value="favorites">Most favorited shows</option>
+          <option value="platforms">Top platforms by usage</option>
+        </select>
+
+        <button type="submit" class="btn-primary">
+          📈 Generate report
+        </button>
+      </form>
+
+      <!-- Example report -->
+      <section class="report-section">
+        <h2 class="report-title">Sample report (demo data)</h2>
+        <p class="report-note">
+          This sample report simulates what analytics would look like using data
+          from the <strong>SearchQueries</strong>, <strong>Favorites</strong>, and
+          <strong>Shows</strong> tables in our RetroCast database.
+        </p>
+
+        <table class="report-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Show</th>
+              <th>Metric value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Avatar: The Last Airbender</td>
+              <td>324 searches</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Pokémon</td>
+              <td>291 searches</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Gravity Falls</td>
+              <td>245 searches</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <p class="footer-text">
+        <a href="index.html">⬅ Back to Create Account</a>
+      </p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,252 @@
+:root {
+  --bg-main: #ff9a3c;
+  --bg-main-2: #ffc15e;
+  --card-bg: #fff8e8;
+  --yellow: #ffe27b;
+  --yellow-dark: #ffcf3f;
+  --orange: #ff9a3c;
+  --orange-dark: #e47800;
+  --text-main: #3c2a10;
+  --text-soft: #7a6547;
+  --border-soft: #f0d8b0;
+
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+}
+
+/* BODY BACKGROUND */
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(180deg, var(--bg-main), var(--bg-main-2));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.8rem;
+  color: var(--text-main);
+}
+
+/* CARD */
+.card {
+  background: var(--card-bg);
+  border-radius: var(--radius-lg);
+  width: 100%;
+  max-width: 480px;
+  padding: 2.2rem 2.3rem 2rem;
+  box-shadow:
+    0 14px 32px rgba(0, 0, 0, 0.18),
+    0 0 0 3px rgba(255, 226, 123, 0.45);
+  border: 2px solid var(--yellow);
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* LOGO */
+.brand-logo {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto 0.8rem;
+  filter: drop-shadow(0 3px 8px rgba(0,0,0,0.2));
+  opacity: 0.95;
+}
+
+/* FUN BADGE */
+.badge {
+  display: inline-flex;
+  background: var(--yellow);
+  color: var(--orange-dark);
+  padding: 0.35rem 0.9rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.75rem;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* TITLE */
+h1 {
+  margin: 0.7rem 0 0.3rem;
+  font-size: 1.85rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* SUBTITLE */
+.subtitle {
+  font-size: 0.95rem;
+  color: var(--text-soft);
+  margin-top: 0.4rem;
+  text-align: center;
+}
+
+/* FORM */
+.form {
+  margin-top: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+}
+
+/* LABEL */
+.field-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.helper {
+  font-size: 0.72rem;
+  color: var(--text-soft);
+}
+
+/* INPUT + SELECT */
+.input,
+.select {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border-radius: var(--radius-pill);
+  border: 2px solid var(--border-soft);
+  background: #fffdf8;
+  color: var(--text-main);
+  font-size: 0.9rem;
+  transition: 0.18s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.input:focus,
+.select:focus {
+  border-color: var(--yellow-dark);
+  box-shadow: 0 0 0 3px rgba(255, 226, 123, 0.45);
+  outline: none;
+}
+
+/* INLINE GRID */
+.inline-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.9rem;
+}
+
+/* BENEFIT PILL */
+.pill {
+  display: inline-flex;
+  padding: 0.35rem 0.9rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.78rem;
+  background: rgba(255, 204, 94, 0.25);
+  color: var(--orange-dark);
+  font-weight: 600;
+  margin-top: 0.4rem;
+}
+
+.chip-row {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.chip {
+  padding: 0.32rem 0.75rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.72rem;
+  background: rgba(255, 226, 123, 0.45);
+  color: #563b00;
+}
+
+/*  PRIMARY BUTTON */
+.btn-primary {
+  margin-top: 0.7rem;
+  padding: 0.9rem 1rem;
+  width: 100%;
+  border-radius: var(--radius-pill);
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  background: linear-gradient(90deg, var(--yellow), var(--orange));
+  color: #3c2700;
+  box-shadow: 0 10px 22px rgba(255, 138, 0, 0.35);
+  transition: 0.18s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+}
+
+/* FOOTER */
+.footer-text {
+  margin-top: 1.2rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-soft);
+}
+
+.footer-text a {
+  color: var(--orange-dark);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* 🌼 BUSINESS REPORTS PAGE */
+.reports-card {
+  max-width: 720px;
+  padding-top: 2.2rem;
+}
+
+/* REPORT BOX */
+.report-section {
+  margin-top: 1.8rem;
+  background: #fffdf8;
+  border-radius: 18px;
+  padding: 1.3rem 1.2rem 1.5rem;
+  border: 1px solid var(--border-soft);
+  box-shadow: 0 5px 12px rgba(0,0,0,0.08);
+}
+
+.report-title {
+  margin-bottom: 0.2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.report-note {
+  font-size: 0.8rem;
+  color: var(--text-soft);
+  margin-bottom: 1rem;
+}
+
+/* TABLE */
+.report-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.report-table thead {
+  background: rgba(255, 226, 123, 0.6);
+}
+
+.report-table th,
+.report-table td {
+  padding: 0.55rem 0.6rem;
+  text-align: left;
+}
+
+.report-table tbody tr:nth-child(odd) {
+  background: #fffefb;
+}
+
+.report-table tbody tr:nth-child(even) {
+  background: #fff4d9;
+}
+
+/* FADE ANIMATION */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
